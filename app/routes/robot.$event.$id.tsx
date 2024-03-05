@@ -5,7 +5,6 @@ export default function Robot() {
 
     return (
         <body>
-            <Scripts />
             <header>
                 <div>
                     <h3>5892 Scouting Data</h3>
@@ -13,61 +12,41 @@ export default function Robot() {
                         <div className="search">
                             <h4>Search</h4>
                             <input id="searchBox"></input>
-                            <button
-                                id="searchButton"
-                                onClick={searchFunction}
-                            >
-                                Got
-                            </button>
+                            <button id="searchButton" onClick={searchFunction} >Go</button>
                         </div>
                     </div>
                 </div>
             </header>
             <main>
-                <h3 className="pageTitle">Event 1</h3>
-                <section className="matchList">
-
-
-                    <div id="qualifyingMatchesSection">
-                        <h5>Qualifying Matches</h5>
-                        <div id="qualifyingMatchesContent" className="matchSection">
-                            <div className="matchContainer roundedBox">
-                                <h3>Match 1</h3>
-                                <div className="matchSummary">
-                                    <h6 className="teamRedText">9999</h6>
-                                    <h6 className="teamRedText">9999</h6>
-                                    <h6 className="teamRedText">9999</h6>
-                                    <h4 className="teamRedText">119</h4>
-                                    <h4>-</h4>
-                                    <h4 className="teamBlueText">63</h4>
-                                    <h6 className="teamBlueText">9999</h6>
-                                    <h6 className="teamBlueText">9999</h6>
-                                    <h6 className="teamBlueText">9999</h6>
-                                </div>
+                <h3 id="teamName" className="pageTitle">9999 - Team Name</h3>
+                <section>
+                    <h5>Team Summary</h5>
+                    <div className="teamSummaryContainer roundedBox">
+                        <div>
+                            <h4 id="epa">EPA: unknown</h4>
+                            <div className="smallEPASummaryContainer">
+                                <h6 id="autonEpa">Auton EPA: unknown</h6>
+                                <h6 id="teleopEpa">Teleop EPA: unknown</h6>
+                                <h6 id="endgameEpa">Endgame EPA: unknown</h6>
                             </div>
                         </div>
+                        <div>
+                            <canvas id="myChart"></canvas>
+                        </div>
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        <script src="https://unpainful-programme.000webhostapp.com/chart1.js"></script>
                     </div>
-                    <div id="bracketMatchesSection">
-                        <h5>Bracket Matches</h5>
-                        <div id="bracketMatchesContent" className="matchSection">
-                            <div className="matchContainer roundedBox" id="MatchTemplate">
-                                <h3>Match 1</h3>
-                                <div className="matchSummary">
-                                    <h6 className="teamRedText">9999</h6>
-                                    <h6 className="teamRedText">9999</h6>
-                                    <h6 className="teamRedText">9999</h6>
-                                    <h4 className="teamRedText">119</h4>
-                                    <h4>-</h4>
-                                    <h4 className="teamBlueText">63</h4>
-                                    <h6 className="teamBlueText">9999</h6>
-                                    <h6 className="teamBlueText">9999</h6>
-                                    <h6 className="teamBlueText">9999</h6>
-                                </div>
-                            </div>
-                        </div> 
+                </section>
+                <section className="matchList">
+                    <div>
+                        <h5>Qualifying Matches</h5>
+                        <div id="qualifyingMatchesSection" className="matchSection">
+                            
+                        </div>
                     </div>
                 </section>
             </main>
+            <script src="https://unpainful-programme.000webhostapp.com/robot.js"></script>
         </body>
     );
 }
