@@ -1,1 +1,1 @@
-web: npm run dev
+web: npx remix-serve build/index.js
