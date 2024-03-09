@@ -5,6 +5,7 @@ export default function Robot() {
 
     return (
         <body>
+            <Scripts/>
             <header>
                 <div>
                     <h3>5892 Scouting Data</h3>
