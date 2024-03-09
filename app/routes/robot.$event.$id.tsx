@@ -9,7 +9,6 @@ export default function Robot() {
                 <div>
                     <h3>5892 Scouting Data</h3>
                     <div className="headerPush">
-                        <input id="searchBox">
                         <div className="search">
                             <h4>Search</h4>
                             <button
