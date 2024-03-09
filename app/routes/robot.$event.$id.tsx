@@ -11,12 +11,8 @@ export default function Robot() {
                     <div className="headerPush">
                         <div className="search">
                             <h4>Search</h4>
-                            <button
-                                id="searchButton"
-                                onClick={searchFunction}
-                            >
-                                Got
-                            </button>
+                            <input id="searchBox"></input>
+                            <button id="searchButton" onClick={searchFunction} >Go</button>
                         </div>
                     </div>
                 </div>
