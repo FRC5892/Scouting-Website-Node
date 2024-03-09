@@ -12,7 +12,12 @@ export default function Robot() {
                         <div className="search">
                             <h4>Search</h4>
                             <input id="searchBox"></input>
-                            <button id="searchButton" onClick={searchFunction} >Go</button>
+                            <button
+                                id="searchButton"
+                                onClick={searchFunction}
+                            >
+                                Got
+                            </button>
                         </div>
                     </div>
                 </div>
